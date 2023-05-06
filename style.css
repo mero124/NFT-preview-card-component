@@ -1,0 +1,124 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+   --card-bg: hsl(216, 50%, 16%);
+   --line: hsl(215, 32%, 27%);
+   --white: hsl(0, 0%, 100%);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-bg);
+}
+
+.container {
+    width: 350px;
+    height: 630px;
+    position: relative;
+    margin: 150px auto;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+
+.container img {
+    max-width: 90%;
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.img-top{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.img-top img{
+    width: 100%;
+    display: block;
+}
+.img-overlay{
+    position: absolute;
+    left: 15px;
+    top: 21px;
+    height: 93%;
+    width: 91%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+    border-radius: 15px;
+}
+.img-overlay img{
+    position: absolute;
+    width: 50px;
+    left: 36%;
+    top: 35%;
+    cursor: pointer;
+}
+.img-top:hover .img-overlay{
+    display: block;
+}
+
+.first-p {
+    font-weight: bold;
+    color: var(--white);
+    margin-left: 20px;
+}
+
+.first-p:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.first-p-num {
+    color: var(--white);
+    margin-left: 20px;
+}
+
+.main-p {
+    color: var(--soft-blue);
+    margin-left: 20px;
+}
+
+.eth {
+    color: var(--cyan);
+}
+
+.days-left {
+    color: var(--soft-blue);
+    margin-left: 212px;
+    margin-top: -59px;
+}
+
+hr {
+    color: var(--line);
+    width: 304px;
+    margin-top: 20px;
+}
+
+.bottom-image {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    margin-right: 15px;
+}
+
+.bottom-p {
+    color: var(--line);
+    margin-left: 70px;
+    margin-top: -33px;
+}
+
+span {
+    color: var(--white);
+}
+
+span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
